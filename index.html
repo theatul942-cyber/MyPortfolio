@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Atul Chadgal - B.Tech CSE Student Portfolio. Computer Science student at Lovely Professional University specializing in Python, AI, Web Development, and Software Engineering." />
+  <meta name="keywords"
+    content="Atul Chadgal, Portfolio, CSE Student, Lovely Professional University, Python Developer, AI Music Assistant, Software Engineer" />
+  <meta name="author" content="Atul Chadgal" />
+  <title>Atul Chadgal | B.Tech CSE Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="dark-theme">
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-accent">&lt;</span>Atul<span class="logo-accent">/&gt;</span>
+      </a>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="#home" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> About</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a></li>
+        <li class="nav-item"><a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Experience</a>
+        </li>
+        <li class="nav-item"><a href="#projects" class="nav-link"><i class="fa-solid fa-diagram-project"></i>
+            Projects</a></li>
+        <li class="nav-item"><a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i>
+            Education</a></li>
+        <li class="nav-item"><a href="#certifications" class="nav-link"><i class="fa-solid fa-certificate"></i>
+            Certificates</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Contact</a>
+        </li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Dark/Light Mode">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open Navigation Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-background-effects">
+      <div class="gradient-glow glow-1"></div>
+      <div class="gradient-glow glow-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="status-badge">
+          <span class="pulse-dot"></span>
+          <span>B.Tech CSE Student • Open for Opportunities</span>
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="highlight-text">Atul Chadgal</span>
+        </h1>
+        <h2 class="hero-subtitle">
+          <span class="typing-text" id="typing-text">B.Tech CSE Student | Python Enthusiast | Aspiring Software
+            Developer</span>
+        </h2>
+
+        <p class="hero-description">
+          Second-year Computer Science student passionate about software development, problem-solving, and artificial
+          intelligence. I build practical web applications, Python tools, and IoT solutions while continuously
+          sharpening my technical skills.
+        </p>
+
+        <div class="hero-stats">
+          <div class="stat-card">
+            <span class="stat-number">8.96</span>
+            <span class="stat-label">B.Tech CGPA</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">TCS</span>
+            <span class="stat-label">Frontend Intern</span>
+          </div>
+        </div>
+
+        <div class="hero-cta-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fa-solid fa-rocket"></i> View My Projects
+          </a>
+          <a href="resume.html" target="_blank" class="btn btn-secondary" id="resume-download-btn">
+            <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fa-solid fa-comments"></i> Connect With Me
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <!-- Formal Circular Profile Header Card -->
+        <div class="hero-profile-card glass-card">
+          <div class="profile-avatar-container">
+            <div class="avatar-ring">
+              <img src="atul_profile.jpg" alt="Atul Chadgal Profile Photo" class="profile-avatar-img" />
+              <span class="avatar-online-dot" title="Open to Opportunities"></span>
+            </div>
+          </div>
+          <div class="profile-card-details">
+            <h3 class="profile-card-name">Atul Chadgal</h3>
+            <p class="profile-card-role"><i class="fa-solid fa-graduation-cap"></i> B.Tech CSE Student @ LPU</p>
+            <span class="profile-status-pill"><i class="fa-solid fa-circle-check"></i> Open for Internships &
+              Roles</span>
+          </div>
+        </div>
+
+        <!-- Code Terminal Window -->
+        <div class="profile-card-glass">
+          <div class="card-header-bar">
+            <span class="window-dot red"></span>
+            <span class="window-dot yellow"></span>
+            <span class="window-dot green"></span>
+            <span class="window-title">atul_profile.py</span>
+          </div>
+          <div class="code-editor-body">
+            <pre><code><span class="code-keyword">class</span> <span class="code-class">StudentDeveloper</span>:
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(self):
+        self.name = <span class="code-str">"Atul Chadgal"</span>
+        self.degree = <span class="code-str">"B.Tech CSE (2nd Year)"</span>
+        self.university = <span class="code-str">"Lovely Professional University"</span>
+        self.cgpa = <span class="code-num">8.96</span>
+        self.primary_skills = [<span class="code-str">"Python"</span>, <span class="code-str">"SQL"</span>, <span class="code-str">"C/C++"</span>, <span class="code-str">"HTML/CSS"</span>]
+        self.current_focus = <span class="code-str">"Software Dev & Artificial Intelligence"</span>
+
+    <span class="code-keyword">def</span> <span class="code-func">get_goal</span>(self):
+        <span class="code-keyword">return</span> <span class="code-str">"Transform ideas into impactful practical technology solutions!"</span>
+
+dev = StudentDeveloper()
+print(dev.get_goal())</code></pre>
+          </div>
+          <div class="profile-meta-footer">
+            <div class="meta-item"><i class="fa-solid fa-location-dot"></i> Punjab / Jammu, India</div>
+            <div class="meta-item"><i class="fa-solid fa-graduation-cap"></i> CSE 2025–Present</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-badge">Get To Know Me</span>
+        <h2 class="section-title">About <span class="highlight">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card-main glass-card">
+          <div class="about-icon-wrapper">
+            <i class="fa-solid fa-user-graduate"></i>
+          </div>
+          <h3>Professional Profile</h3>
+          <p class="about-text">
+            I am a second-year B.Tech Computer Science and Engineering student at Lovely Professional University with a
+            strong interest in software development, data structures, and artificial intelligence. I have developed
+            foundational skills in Python, SQL, C, C++, and modern web technologies (HTML, CSS, JavaScript).
+          </p>
+          <p class="about-text">
+            Through my internship at Tata Consultancy Services (TCS) and hands-on projects—such as building an AI Music
+            Assistant and an IoT Smart Blind Man's Umbrella—I enjoy solving real-world programming problems and turning
+            concepts into practical applications. My ultimate goal is to become a skilled software engineer and
+            contribute to technology-driven solutions.
+          </p>
+
+          <div class="about-info-pills">
+            <div class="info-pill"><i class="fa-solid fa-user"></i> <strong>Name:</strong> Atul Chadgal</div>
+            <div class="info-pill"><i class="fa-solid fa-graduation-cap"></i> <strong>Degree:</strong> B.Tech CSE (2nd
+              Year)</div>
+            <div class="info-pill"><i class="fa-solid fa-university"></i> <strong>University:</strong> Lovely
+              Professional University</div>
+
+            <div class="info-pill"><i class="fa-solid fa-bullseye"></i> <strong>Aspiration:</strong> ML Engineer /
+              AI Developer</div>
+            <div class="info-pill"><i class="fa-solid fa-location-dot"></i> <strong>Location:</strong> Jammu / Punjab,
+              India</div>
+          </div>
+        </div>
+
+        <div class="about-strengths-grid">
+          <div class="strength-card glass-card">
+            <div class="strength-icon"><i class="fa-solid fa-brain"></i></div>
+            <h4>Problem Solving</h4>
+            <p>Solid grasp of Data Structures, Algorithms, Object-Oriented Programming, and logical reasoning.</p>
+          </div>
+
+          <div class="strength-card glass-card">
+            <div class="strength-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <h4>Practical Development</h4>
+            <p>Hands-on experience developing Python Streamlit applications, MySQL CRUD systems, and responsive web
+              pages.</p>
+          </div>
+
+          <div class="strength-card glass-card">
+            <div class="strength-icon"><i class="fa-solid fa-users"></i></div>
+            <h4>Teamwork & Adaptability</h4>
+            <p>Proven collaboration during TCS internship, training programs, and AWS community events.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-badge">Technical Stack</span>
+        <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+        <p class="section-subtitle">Categorized skills with actual proficiency levels (Beginner → Intermediate →
+          Advanced)</p>
+        <div class="section-line"></div>
+      </div>
+
+      <!-- Skill Category Filter Buttons -->
+      <div class="skills-filter-buttons">
+        <button class="filter-btn active" data-filter="all">All Skills</button>
+        <button class="filter-btn" data-filter="languages">Programming</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+        <button class="filter-btn" data-filter="database">Database & Data</button>
+        <button class="filter-btn" data-filter="tools">Tools & DevOps</button>
+        <button class="filter-btn" data-filter="core">Core Subjects</button>
+      </div>
+
+      <div class="skills-container-grid">
+
+        <!-- Programming Languages -->
+        <div class="skill-category-card glass-card" data-category="languages">
+          <div class="category-header">
+            <i class="fa-solid fa-code category-icon"></i>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="badge badge-advanced">Advanced</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-solid fa-database"></i> SQL</span>
+                <span class="badge badge-intermediate">Intermediate</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="width: 75%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-solid fa-c"></i> C</span>
+                <span class="badge badge-intermediate">Intermediate</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="width: 70%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-solid fa-code"></i> C++</span>
+                <span class="badge badge-intermediate">Intermediate</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="width: 68%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Development -->
+        <div class="skill-category-card glass-card" data-category="web">
+          <div class="category-header">
+            <i class="fa-solid fa-globe category-icon"></i>
+            <h3>Web Development</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-brands fa-html5"></i> HTML5</span>
+                <span class="badge badge-advanced">Advanced</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                <span class="badge badge-advanced">Advanced</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-brands fa-js"></i> JavaScript</span>
+                <span class="badge badge-intermediate">Intermediate</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="width: 72%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-brands fa-react"></i> React</span>
+                <span class="badge badge-beginner">Beginner</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="width: 45%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Database & Data Science -->
+        <div class="skill-category-card glass-card" data-category="database">
+          <div class="category-header">
+            <i class="fa-solid fa-server category-icon"></i>
+            <h3>Databases & Data Science</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-solid fa-database"></i> MySQL</span>
+                <span class="badge badge-advanced">Advanced</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-solid fa-chart-pie"></i> NumPy & Pandas</span>
+                <span class="badge badge-intermediate">Intermediate</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="width: 75%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-solid fa-chart-line"></i> Matplotlib</span>
+                <span class="badge badge-intermediate">Intermediate</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="width: 70%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="width: 40%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Developer Tools & DevOps -->
+        <div class="skill-category-card glass-card" data-category="tools">
+          <div class="category-header">
+            <i class="fa-solid fa-screwdriver-wrench category-icon"></i>
+            <h3>Developer Tools & DevOps</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+                <span class="badge badge-intermediate">Intermediate</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="width: 80%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-solid fa-code"></i> VS Code</span>
+                <span class="badge badge-advanced">Advanced</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-brands fa-python"></i> IDLE</span>
+                <span class="badge badge-advanced">Advanced</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="width: 88%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-brands fa-aws"></i> AWS Fundamentals</span>
+                <span class="badge badge-beginner">Beginner</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-fill" style="width: 50%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Core Computer Science Subjects -->
+        <div class="skill-category-card glass-card" data-category="core">
+          <div class="category-header">
+            <i class="fa-solid fa-book-bookmark category-icon"></i>
+            <h3>Core CSE Subjects & Soft Skills</h3>
+          </div>
+          <div class="skills-tags-grid">
+            <span class="tag-pill highlight-pill"><i class="fa-solid fa-diagram-project"></i> Data Structures &
+              Algorithms</span>
+            <span class="tag-pill highlight-pill"><i class="fa-solid fa-cubes"></i> Object-Oriented Programming
+              (OOP)</span>
+            <span class="tag-pill highlight-pill"><i class="fa-solid fa-database"></i> Database Management Systems
+              (DBMS)</span>
+            <span class="tag-pill"><i class="fa-solid fa-puzzle-piece"></i> Problem Solving</span>
+            <span class="tag-pill"><i class="fa-solid fa-users-gear"></i> Teamwork & Collaboration</span>
+            <span class="tag-pill"><i class="fa-solid fa-clock"></i> Time Management</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Training Section -->
+  <section class="section experience-section" id="experience">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-badge">Industry Exposure</span>
+        <h2 class="section-title">Internship & <span class="highlight">Training</span></h2>
+        <p class="section-subtitle">Practical industry experience and structured skill training programs</p>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="timeline-wrapper">
+
+        <!-- TCS Internship Card -->
+        <div class="timeline-card glass-card">
+          <div class="timeline-badge-icon"><i class="fa-solid fa-building-user"></i></div>
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-role">Frontend Intern</h3>
+              <h4 class="timeline-company"><i class="fa-solid fa-briefcase"></i> Tata Consultancy Services (TCS)</h4>
+            </div>
+            <div class="timeline-period-badge">
+              <i class="fa-regular fa-calendar"></i> June 2026 – August 2026
+            </div>
+          </div>
+
+          <ul class="timeline-bullet-list">
+            <li><i class="fa-solid fa-check-circle"></i> Developed clean, standard web pages using <strong>HTML</strong>
+              and <strong>CSS</strong>.</li>
+            <li><i class="fa-solid fa-check-circle"></i> Created responsive web layouts ensuring optimal viewing across
+              mobile, tablet, and desktop devices.</li>
+            <li><i class="fa-solid fa-check-circle"></i> Rigorously tested web pages and diagnosed/fixed basic HTML,
+              CSS, and JavaScript UI bugs.</li>
+          </ul>
+
+          <div class="timeline-footer">
+            <div class="tech-tags">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Responsive Design</span>
+              <span class="tech-tag">UI Testing</span>
+            </div>
+            <button class="btn btn-sm btn-outline view-cert-btn" data-cert="tcs">
+              <i class="fa-solid fa-certificate"></i> View Certificate
+            </button>
+          </div>
+        </div>
+
+        <!-- Python Training Card -->
+        <div class="timeline-card glass-card">
+          <div class="timeline-badge-icon"><i class="fa-brands fa-python"></i></div>
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-role">Python Programming Training</h3>
+              <h4 class="timeline-company"><i class="fa-solid fa-graduation-cap"></i> Fundamentals & Problem Solving
+              </h4>
+            </div>
+            <div class="timeline-period-badge">
+              <i class="fa-regular fa-calendar"></i> June 2026 – July 2026
+            </div>
+          </div>
+
+          <ul class="timeline-bullet-list">
+            <li><i class="fa-solid fa-check-circle"></i> Completed structured training covering Python fundamentals,
+              control structures, loops, and data structures.</li>
+            <li><i class="fa-solid fa-check-circle"></i> Mastered Object-Oriented Programming (OOP) concepts in Python
+              including inheritance and encapsulation.</li>
+            <li><i class="fa-solid fa-check-circle"></i> Applied core concepts by solving algorithm exercises and
+              building practical mini-projects.</li>
+          </ul>
+
+          <div class="timeline-footer">
+            <div class="tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Data Structures</span>
+              <span class="tech-tag">OOP</span>
+              <span class="tech-tag">IDLE</span>
+              <span class="tech-tag">VS Code</span>
+            </div>
+            <button class="btn btn-sm btn-outline view-cert-btn" data-cert="python-training">
+              <i class="fa-solid fa-certificate"></i> View Certificate
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section (Formulated with P -> T -> R -> L) -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-badge">Core Work Showcase</span>
+        <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+        <p class="section-subtitle">Structured using the professional <strong>P → T → R → L</strong> Technical Writing
+          Formula (Problem, Technology, Result, Learning)</p>
+        <div class="section-line"></div>
+      </div>
+
+      <!-- Project Category Filters -->
+      <div class="project-filter-buttons">
+        <button class="project-filter-btn active" data-pfilter="all">All Projects</button>
+        <button class="project-filter-btn" data-pfilter="python">Python & AI</button>
+        <button class="project-filter-btn" data-pfilter="iot">IoT & Hardware</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: AI Music Assistant -->
+        <div class="project-card glass-card" data-pcategory="python">
+          <div class="project-banner">
+            <div class="project-banner-overlay"></div>
+            <div class="project-icon-floating"><i class="fa-solid fa-music"></i></div>
+            <span class="project-date">April 2026 – May 2026</span>
+          </div>
+
+          <div class="project-body">
+            <h3 class="project-title">AI Music Assistant</h3>
+            <p class="project-tagline">AI-powered music recommendation assistant with interactive Streamlit interface &
+              Spotify API.</p>
+
+            <div class="ptrl-summary-box">
+              <div class="ptrl-item"><span class="ptrl-letter p-letter">P</span> <strong>Problem:</strong> Fragmented
+                music discovery without instant personalized audio preview.</div>
+              <div class="ptrl-item"><span class="ptrl-letter t-letter">T</span> <strong>Tech:</strong> Python,
+                Streamlit, Spotipy (Spotify API)</div>
+              <div class="ptrl-item"><span class="ptrl-letter r-letter">R</span> <strong>Result:</strong> Search
+                tracks/artists, view artwork, listen to previews & get AI recommendations.</div>
+              <div class="ptrl-item"><span class="ptrl-letter l-letter">L</span> <strong>Learning:</strong> API OAuth
+                authentication, real-time data handling & UI design in Streamlit.</div>
+            </div>
+
+            <div class="project-skills-list">
+              <span class="pskill-tag">Python</span>
+              <span class="pskill-tag">Streamlit</span>
+              <span class="pskill-tag">Spotify API</span>
+              <span class="pskill-tag">Spotipy</span>
+              <span class="pskill-tag">UI/UX</span>
+            </div>
+
+            <div class="project-card-footer">
+              <button class="btn btn-sm btn-primary open-ptrl-modal" data-project="music">
+                <i class="fa-solid fa-circle-info"></i> Full P-T-R-L Breakdown
+              </button>
+              <a href="https://github.com/theatul942-cyber" target="_blank" class="project-icon-link"
+                aria-label="GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Smart Blind Man's Umbrella -->
+        <div class="project-card glass-card" data-pcategory="iot">
+          <div class="project-banner banner-iot">
+            <div class="project-banner-overlay"></div>
+            <div class="project-icon-floating"><i class="fa-solid fa-eye-slash"></i></div>
+            <span class="project-date">Nov 2025 – Dec 2025</span>
+          </div>
+
+          <div class="project-body">
+            <h3 class="project-title">Smart Blind Man's Umbrella</h3>
+            <p class="project-tagline">Smart assistive retrofit kit for visually impaired individuals featuring dual
+              sensors & fall alert buzzer.</p>
+
+            <div class="ptrl-summary-box">
+              <div class="ptrl-item"><span class="ptrl-letter p-letter">P</span> <strong>Problem:</strong> Visually
+                impaired persons lack active obstacle & fall hazard alerts outdoors.</div>
+              <div class="ptrl-item"><span class="ptrl-letter t-letter">T</span> <strong>Tech:</strong> Arduino Uno,
+                Arduino IDE, Ultrasonic Sensors, MPU-6050</div>
+              <div class="ptrl-item"><span class="ptrl-letter r-letter">R</span> <strong>Result:</strong> Compact
+                modular umbrella kit with distance proximity and gyroscopic fall detection alerts.</div>
+              <div class="ptrl-item"><span class="ptrl-letter l-letter">L</span> <strong>Learning:</strong>
+                Microcontroller programming, sensor fusion, safety-critical hardware design.</div>
+            </div>
+
+            <div class="project-skills-list">
+              <span class="pskill-tag">Arduino Uno</span>
+              <span class="pskill-tag">C++</span>
+              <span class="pskill-tag">Ultrasonic Sensors</span>
+              <span class="pskill-tag">MPU-6050</span>
+              <span class="pskill-tag">IoT</span>
+            </div>
+
+            <div class="project-card-footer">
+              <button class="btn btn-sm btn-primary open-ptrl-modal" data-project="umbrella">
+                <i class="fa-solid fa-circle-info"></i> Full P-T-R-L Breakdown
+              </button>
+              <a href="https://github.com/theatul942-cyber" target="_blank" class="project-icon-link"
+                aria-label="GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section education-section" id="education">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-badge">Academic Background</span>
+        <h2 class="section-title">My <span class="highlight">Education</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="education-cards-grid">
+
+        <!-- University Degree -->
+        <div class="edu-card glass-card featured-edu">
+          <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="edu-details">
+            <span class="edu-year">2025 – Present (2nd Year)</span>
+            <h3>B.Tech - Computer Science & Engineering</h3>
+            <h4><i class="fa-solid fa-university"></i> Lovely Professional University</h4>
+            <p class="edu-location"><i class="fa-solid fa-location-dot"></i> Phagwara, Punjab</p>
+            <div class="edu-score-badge">
+              <i class="fa-solid fa-star"></i> CGPA: <strong>8.96 / 10.0</strong>
+            </div>
+            <p class="edu-desc">Core Focus: Data Structures & Algorithms, Object-Oriented Programming, Database
+              Management Systems, Operating Systems, Web Technologies.</p>
+          </div>
+        </div>
+
+        <!-- Class XII -->
+        <div class="edu-card glass-card">
+          <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+          <div class="edu-details">
+            <span class="edu-year">2024 – 2025</span>
+            <h3>Senior Secondary (Class XII)</h3>
+            <h4><i class="fa-solid fa-building-columns"></i> Shiksha Niketan Higher Secondary</h4>
+            <p class="edu-location"><i class="fa-solid fa-location-dot"></i> Jeevan Nagar, Jammu</p>
+            <div class="edu-score-badge secondary">
+              <i class="fa-solid fa-award"></i> Score: <strong>80%</strong>
+            </div>
+            <p class="edu-desc">Stream: Non-Medical (Physics, Chemistry, Mathematics & Computer Applications).</p>
+          </div>
+        </div>
+
+        <!-- Class X -->
+        <div class="edu-card glass-card">
+          <div class="edu-icon"><i class="fa-solid fa-book-open"></i></div>
+          <div class="edu-details">
+            <span class="edu-year">High School</span>
+            <h3>High School (Class X)</h3>
+            <h4><i class="fa-solid fa-school-flag"></i> Fatima Convent High School</h4>
+            <p class="edu-location"><i class="fa-solid fa-location-dot"></i> Bishnah, Jammu</p>
+            <div class="edu-score-badge secondary">
+              <i class="fa-solid fa-award"></i> Score: <strong>86%</strong>
+            </div>
+            <p class="edu-desc">Foundational Secondary Education with Distinction in Science and Mathematics.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications & Achievements Section -->
+  <section class="section certifications-section" id="certifications">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-badge">Qualifications & Honors</span>
+        <h2 class="section-title">Certifications & <span class="highlight">Achievements</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="cert-achieve-grid">
+
+        <!-- Certifications Column -->
+        <div class="cert-column">
+          <h3 class="column-title"><i class="fa-solid fa-certificate"></i> Certifications</h3>
+
+          <div class="cert-card glass-card">
+            <div class="cert-logo"><i class="fa-brands fa-python"></i></div>
+            <div class="cert-info">
+              <h4>Programming Fundamentals Using Python</h4>
+              <p class="cert-issuer">Infosys Springboard • June 2026</p>
+              <span class="cert-badge">Verified Credential</span>
+            </div>
+            <button class="cert-view-btn" data-cert="infosys-python" aria-label="View Certificate"><i
+                class="fa-solid fa-eye"></i></button>
+          </div>
+
+          <div class="cert-card glass-card">
+            <div class="cert-logo"><i class="fa-solid fa-robot"></i></div>
+            <div class="cert-info">
+              <h4>Introduction to Artificial Intelligence</h4>
+              <p class="cert-issuer">Infosys Springboard • March 2026</p>
+              <span class="cert-badge">Verified Credential</span>
+            </div>
+            <button class="cert-view-btn" data-cert="infosys-ai" aria-label="View Certificate"><i
+                class="fa-solid fa-eye"></i></button>
+          </div>
+
+          <div class="cert-card glass-card">
+            <div class="cert-logo"><i class="fa-solid fa-code"></i></div>
+            <div class="cert-info">
+              <h4>Programming Using C++</h4>
+              <p class="cert-issuer">Infosys Springboard • Jan 2026</p>
+              <span class="cert-badge">Verified Credential</span>
+            </div>
+            <button class="cert-view-btn" data-cert="infosys-cpp" aria-label="View Certificate"><i
+                class="fa-solid fa-eye"></i></button>
+          </div>
+
+          <div class="cert-card glass-card">
+            <div class="cert-logo"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="cert-info">
+              <h4>Frontend Development Internship Certificate</h4>
+              <p class="cert-issuer">Tata Consultancy Services (TCS) • August 2026</p>
+              <span class="cert-badge">Industry Experience</span>
+            </div>
+            <button class="cert-view-btn" data-cert="tcs" aria-label="View Certificate"><i
+                class="fa-solid fa-eye"></i></button>
+          </div>
+        </div>
+
+        <!-- Achievements Column -->
+        <div class="achieve-column">
+          <h3 class="column-title"><i class="fa-solid fa-trophy"></i> Key Achievements</h3>
+
+          <div class="achieve-card glass-card">
+            <div class="achieve-icon"><i class="fa-solid fa-medal"></i></div>
+            <div class="achieve-info">
+              <h4>O Grade in Database Management Systems (DBMS)</h4>
+              <span class="achieve-date"><i class="fa-regular fa-calendar"></i> June 2026</span>
+              <p>Achieved Outstanding ('O' Grade), the highest academic grade, in Database Management Systems course at
+                Lovely Professional University.</p>
+            </div>
+          </div>
+
+          <div class="achieve-card glass-card">
+            <div class="achieve-icon"><i class="fa-brands fa-aws"></i></div>
+            <div class="achieve-info">
+              <h4>AWS Community Day Participant & Reward Winner</h4>
+              <span class="achieve-date"><i class="fa-regular fa-calendar"></i> Nov 2025</span>
+              <p>Participated in technical cloud sessions during AWS Community Day and received a special participation
+                recognition reward from event organizers.</p>
+            </div>
+          </div>
+
+          <div class="achieve-card glass-card">
+            <div class="achieve-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <div class="achieve-info">
+              <h4>Active CSE Problem Solver</h4>
+              <span class="achieve-date"><i class="fa-regular fa-calendar"></i> Ongoing</span>
+              <p>Consistent practice in Data Structures, SQL queries, and Python algorithmic exercises across platforms.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Connect With Me / Contact Section -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-badge">Get In Touch</span>
+        <h2 class="section-title">Connect <span class="highlight">With Me</span></h2>
+        <p class="section-subtitle">Feel free to reach out for internships, project collaborations, or tech discussions!
+        </p>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Contact Cards / Details -->
+        <div class="contact-info-container">
+          <div class="contact-card glass-card">
+            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-text">
+              <h4>Email Me</h4>
+              <a href="mailto:theatul942@gmail.com" class="contact-link">theatul942@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-card glass-card">
+            <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
+            <div class="contact-text">
+              <h4>LinkedIn Profile</h4>
+              <a href="https://www.linkedin.com/in/atul-chadgal-214229398/" target="_blank"
+                class="contact-link">linkedin.com/in/Atul-Chadgal</a>
+            </div>
+          </div>
+
+          <div class="contact-card glass-card">
+            <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+            <div class="contact-text">
+              <h4>GitHub Profile</h4>
+              <a href="https://github.com/theatul942-cyber" target="_blank"
+                class="contact-link">github.com/theatul942-cyber</a>
+            </div>
+          </div>
+
+          <div class="contact-card glass-card">
+            <div class="contact-icon"><i class="fa-solid fa-globe"></i></div>
+            <div class="contact-text">
+              <h4>Portfolio Domain</h4>
+              <a href="https://portfolio-site.com" target="_blank" class="contact-link">portfolio-site.com</a>
+            </div>
+          </div>
+
+          <div class="contact-cta-box glass-card">
+            <i class="fa-solid fa-file-pdf cta-icon"></i>
+            <h4>Need a Copy of My Resume?</h4>
+            <p>Download my formatted B.Tech CSE resume for offline review.</p>
+            <a href="resume.html" target="_blank" class="btn btn-primary btn-block">
+              <i class="fa-solid fa-download"></i> Open / Download Resume
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-container glass-card">
+          <h3 class="form-title"><i class="fa-solid fa-paper-plane"></i> Send Me A Message</h3>
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="form-name">Your Name</label>
+              <input type="text" id="form-name" placeholder="Rahul Sharma" required />
+            </div>
+
+            <div class="form-group">
+              <label for="form-email">Your Email Address</label>
+              <input type="email" id="form-email" placeholder="example@domain.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="form-subject">Subject</label>
+              <input type="text" id="form-subject" placeholder="Project Inquiry / Internship Opportunity" required />
+            </div>
+
+            <div class="form-group">
+              <label for="form-message">Message</label>
+              <textarea id="form-message" rows="5" placeholder="Hi Atul, I would like to discuss..."
+                required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+            <div id="form-response" class="form-response"></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#home" class="footer-logo">&lt;Atul/&gt;</a>
+        <p>B.Tech Computer Science & Engineering Student @ Lovely Professional University</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://github.com/theatul942-cyber" target="_blank" aria-label="GitHub"><i
+            class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/Atul-Chadgal" target="_blank" aria-label="LinkedIn"><i
+            class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:theatul942@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Atul Chadgal. Designed & Built with HTML, CSS, JavaScript for B.Tech CSE Portfolio.</p>
+    </div>
+  </footer>
+
+  <!-- Modal 1: Project P-T-R-L Deep Dive Modal -->
+  <div class="modal-overlay" id="ptrl-modal">
+    <div class="modal-card glass-modal">
+      <button class="modal-close-btn" id="ptrl-modal-close" aria-label="Close Modal">&times;</button>
+      <div id="ptrl-modal-body">
+        <!-- Content injected dynamically via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Certificate Preview Modal -->
+  <div class="modal-overlay" id="cert-modal">
+    <div class="modal-card glass-modal">
+      <button class="modal-close-btn" id="cert-modal-close" aria-label="Close Modal">&times;</button>
+      <div id="cert-modal-body">
+        <!-- Content injected dynamically via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+
+</html>

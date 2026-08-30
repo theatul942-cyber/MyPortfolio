@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atul Chadgal - Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <style>
+    :root {
+      --text-color: #111827;
+      --heading-color: #000000;
+      --muted-color: #4b5563;
+      --accent-color: #1d4ed8;
+      --border-color: #e5e7eb;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text-color);
+      background-color: #f3f4f6;
+      line-height: 1.5;
+      padding: 2rem 1rem;
+    }
+
+    .no-print-bar {
+      max-width: 800px;
+      margin: 0 auto 1.5rem auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .btn-print {
+      background: #2563eb;
+      color: #ffffff;
+      border: none;
+      padding: 0.6rem 1.25rem;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+    }
+
+    .btn-print:hover { background: #1d4ed8; }
+
+    .resume-paper {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 3rem 3.5rem;
+      border-radius: 4px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .header h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--heading-color);
+      letter-spacing: -0.02em;
+    }
+
+    .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      font-size: 0.88rem;
+      color: var(--muted-color);
+      margin-top: 0.4rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-row a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    .section-heading {
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--heading-color);
+      border-bottom: 2px solid var(--heading-color);
+      padding-bottom: 0.25rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      row-gap: 0.4rem;
+      font-size: 0.9rem;
+    }
+
+    .skills-label {
+      font-weight: 700;
+      color: var(--heading-color);
+    }
+
+    .entry {
+      margin-bottom: 1.1rem;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      font-size: 0.95rem;
+    }
+
+    .entry-title {
+      font-weight: 700;
+      color: var(--heading-color);
+    }
+
+    .entry-date {
+      font-size: 0.88rem;
+      color: var(--muted-color);
+      font-weight: 500;
+    }
+
+    .bullet-list {
+      padding-left: 1.2rem;
+      font-size: 0.88rem;
+      color: var(--text-color);
+    }
+
+    .bullet-list li {
+      margin-bottom: 0.25rem;
+    }
+
+    .tech-stack-line {
+      font-size: 0.82rem;
+      font-style: italic;
+      color: var(--muted-color);
+      margin-top: 0.25rem;
+    }
+
+    @media print {
+      body { background: #ffffff; padding: 0; }
+      .no-print-bar { display: none !important; }
+      .resume-paper { box-shadow: none; padding: 0; max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="no-print-bar">
+    <div>
+      <strong>Atul Chadgal Resume Preview</strong>
+      <p style="font-size: 0.8rem; color: #6b7280;">Click print to save as PDF or print hardcopy</p>
+    </div>
+    <div>
+      <button onclick="window.print()" class="btn-print">
+        <i class="fa-solid fa-print"></i> Print / Save as PDF
+      </button>
+      <a href="index.html" class="btn-print" style="background: #4b5563; margin-left: 0.5rem;">
+        <i class="fa-solid fa-arrow-left"></i> Back to Portfolio
+      </a>
+    </div>
+  </div>
+
+  <div class="resume-paper">
+    <div class="header">
+      <h1>Atul Chadgal</h1>
+      <div class="contact-row">
+        <span>LinkedIn: <a href="https://www.linkedin.com/in/Atul-Chadgal" target="_blank">linkedin.com/in/Atul-Chadgal</a></span>
+        <span>Email: <a href="mailto:theatul942@gmail.com">theatul942@gmail.com</a></span>
+        <span>GitHub: <a href="https://github.com/theatul942-cyber" target="_blank">github.com/theatul942-cyber</a></span>
+        <span>Mobile: +91 XXXXXXXXXX</span>
+        <span>Portfolio: <a href="https://portfolio-site.com" target="_blank">portfolio-site.com</a></span>
+      </div>
+    </div>
+
+    <!-- Skills Summary -->
+    <div class="section-heading">SKILLS SUMMARY</div>
+    <div class="skills-grid">
+      <div class="skills-label">Languages:</div>
+      <div>Python, SQL, C, C++, HTML5, CSS3, JavaScript</div>
+
+      <div class="skills-label">Frameworks & Libraries:</div>
+      <div>NumPy, Pandas, Matplotlib, Streamlit</div>
+
+      <div class="skills-label">Databases:</div>
+      <div>MySQL</div>
+
+      <div class="skills-label">Cloud / DevOps:</div>
+      <div>Git, GitHub</div>
+
+      <div class="skills-label">Developer Tools:</div>
+      <div>VS Code, IDLE</div>
+
+      <div class="skills-label">Core Subjects:</div>
+      <div>Data Structures & Algorithms, OOP, DBMS</div>
+
+      <div class="skills-label">Soft Skills:</div>
+      <div>Teamwork, Time Management, Problem Solving</div>
+    </div>
+
+    <!-- Internship -->
+    <div class="section-heading">INTERNSHIP</div>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Frontend Intern — TCS <span style="font-weight: 400; color: #2563eb;">| Certificate</span></span>
+        <span class="entry-date">June 2026 – August 2026</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Developed basic web pages using HTML and CSS.</li>
+        <li>Created responsive layouts and improved webpage design.</li>
+        <li>Tested webpages and fixed basic HTML/CSS and JavaScript issues.</li>
+      </ul>
+    </div>
+
+    <!-- Projects -->
+    <div class="section-heading">PROJECTS</div>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">AI Music Assistant <span style="font-weight: 400; color: #2563eb;">| GitHub</span></span>
+        <span class="entry-date">April 2026 – May 2026</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Developed an AI-powered music recommendation assistant with an interactive Streamlit interface.</li>
+        <li>Integrated Spotify API using Spotipy for secure authentication and real-time music data retrieval.</li>
+        <li>Added intelligent search and recommendation features for tracks, artists and playlists.</li>
+        <li>Designed a user-friendly UI displaying album artwork, track details, audio previews and personalized suggestions.</li>
+      </ul>
+      <div class="tech-stack-line">Tech Stack: Python, Streamlit, Spotify API</div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Smart Blind Man's Umbrella <span style="font-weight: 400; color: #4b5563;">| ECE</span></span>
+        <span class="entry-date">Nov 2025 – Dec 2025</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Designed a smart assistive umbrella retrofit kit for visually impaired individuals.</li>
+        <li>Integrated two ultrasonic sensors for obstacle detection and a gyroscopic sensor for accident/fall detection.</li>
+        <li>Implemented buzzer alerts for nearby obstacles and potential accidents.</li>
+        <li>Developed a compact, modular kit compatible with standard umbrellas.</li>
+      </ul>
+      <div class="tech-stack-line">Tech Stack: Arduino Uno, Arduino IDE, Ultrasonic Sensors, MPU-6050</div>
+    </div>
+
+    <!-- Training -->
+    <div class="section-heading">TRAINING</div>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Python Programming Training — Fundamentals & Problem Solving <span style="font-weight: 400; color: #2563eb;">| Certificate</span></span>
+        <span class="entry-date">June 2026 – July 2026</span>
+      </div>
+      <ul class="bullet-list">
+        <li>Completed structured training covering Python fundamentals, functions, loops, data structures, and OOP concepts.</li>
+        <li>Applied concepts by solving programming exercises and developing small Python programs.</li>
+      </ul>
+      <div class="tech-stack-line">Tech Stack: Python, IDLE, VS Code</div>
+    </div>
+
+    <!-- Certifications / Certificates -->
+    <div class="section-heading">CERTIFICATIONS / CERTIFICATES</div>
+    <div style="font-size: 0.9rem; line-height: 1.8;">
+      <div style="display: flex; justify-content: space-between;">
+        <span>Programming Fundamentals Using Python <span style="color: #2563eb;">| Infosys Springboard</span></span>
+        <span class="entry-date">June 2026</span>
+      </div>
+      <div style="display: flex; justify-content: space-between;">
+        <span>Introduction to Artificial Intelligence <span style="color: #2563eb;">| Infosys Springboard</span></span>
+        <span class="entry-date">March 2026</span>
+      </div>
+      <div style="display: flex; justify-content: space-between;">
+        <span>Programming Using C++ <span style="color: #2563eb;">| Infosys Springboard</span></span>
+        <span class="entry-date">Jan 2026</span>
+      </div>
+    </div>
+
+    <!-- Achievements -->
+    <div class="section-heading">ACHIEVEMENTS</div>
+    <div style="font-size: 0.9rem; line-height: 1.8;">
+      <div style="display: flex; justify-content: space-between;">
+        <span>Secured an O Grade in Database Management Systems</span>
+        <span class="entry-date">June 2026</span>
+      </div>
+      <div style="display: flex; justify-content: space-between;">
+        <span>Participated in AWS Community Day and received a participation reward from the event organizers</span>
+        <span class="entry-date">Nov 2025</span>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="section-heading">EDUCATION</div>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Lovely Professional University</span>
+        <span class="entry-date">Phagwara, Punjab</span>
+      </div>
+      <div style="display: flex; justify-content: space-between; font-size: 0.88rem;">
+        <span>B.Tech / Computer Science and Engineering — CGPA: 8.96</span>
+        <span class="entry-date">2025 – Present</span>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Shiksha Niketan Higher Secondary</span>
+        <span class="entry-date">Jeevan Nagar, Jammu</span>
+      </div>
+      <div style="display: flex; justify-content: space-between; font-size: 0.88rem;">
+        <span>Senior Secondary (Class XII) — Percentage: 80</span>
+        <span class="entry-date">2024 – 2025</span>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Fatima Convent High School</span>
+        <span class="entry-date">Bishnah, Jammu</span>
+      </div>
+      <div style="display: flex; justify-content: space-between; font-size: 0.88rem;">
+        <span>High School (Class X) — Percentage: 86</span>
+        <span class="entry-date"></span>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
